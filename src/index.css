@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 280 40% 97%;
+    --foreground: 280 10% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 280 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 280 10% 20%;
+
+    --primary: 340 85% 70%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 85% 65%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 280 30% 95%;
+    --muted-foreground: 280 10% 50%;
+
+    --accent: 45 95% 70%;
+    --accent-foreground: 280 10% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 280 30% 90%;
+    --input: 280 30% 90%;
+    --ring: 340 85% 70%;
+
+    --radius: 1rem;
+    
+    /* Kawaii game colors */
+    --cat-pink: 340 85% 70%;
+    --cat-pink-light: 340 85% 85%;
+    --fox-blue: 210 85% 65%;
+    --fox-blue-light: 210 85% 80%;
+    --game-purple: 280 60% 70%;
+    --game-yellow: 45 95% 70%;
+    --game-green: 140 70% 65%;
+    --game-orange: 25 95% 65%;
+    
+    /* Gradients */
+    --gradient-arena: linear-gradient(135deg, hsl(340 85% 95%), hsl(210 85% 95%));
+    --gradient-pink: linear-gradient(135deg, hsl(var(--cat-pink)), hsl(var(--cat-pink-light)));
+    --gradient-blue: linear-gradient(135deg, hsl(var(--fox-blue)), hsl(var(--fox-blue-light)));
+    
+    /* Effects */
+    --shadow-soft: 0 4px 20px hsl(280 40% 85%);
+    --shadow-glow-pink: 0 0 30px hsl(var(--cat-pink) / 0.4);
+    --shadow-glow-blue: 0 0 30px hsl(var(--fox-blue) / 0.4);
+    
+    /* Animations */
+    --transition-bouncy: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-smooth: all 0.3s ease;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 280 30% 15%;
+    --foreground: 280 10% 95%;
+
+    --card: 280 25% 20%;
+    --card-foreground: 280 10% 95%;
+
+    --popover: 280 25% 20%;
+    --popover-foreground: 280 10% 95%;
+
+    --primary: 340 85% 70%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 85% 65%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 280 25% 25%;
+    --muted-foreground: 280 10% 70%;
+
+    --accent: 45 95% 70%;
+    --accent-foreground: 280 10% 20%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 280 25% 30%;
+    --input: 280 25% 30%;
+    --ring: 340 85% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-gradient-pink {
+    @apply bg-gradient-to-r from-[hsl(var(--cat-pink))] to-[hsl(var(--cat-pink-light))] bg-clip-text text-transparent;
+  }
+  
+  .text-gradient-blue {
+    @apply bg-gradient-to-r from-[hsl(var(--fox-blue))] to-[hsl(var(--fox-blue-light))] bg-clip-text text-transparent;
+  }
+  
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+  }
+}
