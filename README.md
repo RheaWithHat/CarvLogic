@@ -1,73 +1,85 @@
-# Welcome to your Lovable project
+# CARV Buddies Puzzle Duel - Kawaii Battle Arena
 
-## Project info
+[![Demo](https://img.shields.io/badge/Demo-Online-brightgreen)](https://carv-puzzle-duel.lovable.app/)
 
-**URL**: https://lovable.dev/projects/035872b5-dbf3-4695-bbb3-1c1388196e56
+## Overview
 
-## How can I edit this code?
+CARV Buddies Puzzle Duel is an engaging, kawaii-style puzzle battle game where players duel against opponents using adorable CARV buddies in a vibrant battle arena. Match tiles, unleash special abilities, and outsmart your rivals in fast-paced puzzle challenges!
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- **Kawaii Character Designs**: Collect and battle with cute CARV buddies, each with unique abilities and animations.
+- **Puzzle Duel Mechanics**: Classic match-3 gameplay combined with strategic dueling – swap tiles to create combos and attack your opponent.
+- **Battle Arena Mode**: Compete in single-player vs. AI or prepare for multiplayer showdowns.
+- **Progressive Difficulty**: Levels ramp up with smarter opponents and tougher puzzles.
+- **Responsive Design**: Play seamlessly on desktop or mobile.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/035872b5-dbf3-4695-bbb3-1c1388196e56) and start prompting.
+## Demo
 
-Changes made via Lovable will be committed automatically to this repo.
+Try it live: [https://carv-puzzle-duel.lovable.app/](https://carv-puzzle-duel.lovable.app/)
 
-**Use your preferred IDE**
+## Tech Stack
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **Frontend**: React/Next.js
+- **Styling**: Tailwind CSS
+- **Game Logic**: Custom puzzle engine with state management (Zustand)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Getting Started
 
-Follow these steps:
+### Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Node.js (v18+)
+- npm or yarn
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. Clone the repo:
+   ```
+   git clone https://github.com/yourusername/carv-puzzle-duel.git
+   cd carv-puzzle-duel
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Run locally:
+   ```
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Build for Production
+
+```
+npm run build
+npm start
 ```
 
-**Edit a file directly in GitHub**
+## How to Play
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Select Your Buddy**: Pick a CARV buddy from the roster.
+2. **Enter the Arena**: Face off against an opponent.
+3. **Match & Attack**: Swap adjacent tiles to form matches of 3+ to build energy and launch attacks.
+4. **Special Moves**: Fill your buddy's meter for ultimate abilities.
+5. **Win the Duel**: Deplete your opponent's health first!
 
-**Use GitHub Codespaces**
+## Contributing
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Contributions welcome! Fork the repo, make your changes, and submit a pull request.
 
-## What technologies are used for this project?
+1. Fork the project.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a Pull Request.
 
-This project is built with:
+## License
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project is licensed under the MIT License
 
-## How can I deploy this project?
+## Acknowledgments
 
-Simply open [Lovable](https://lovable.dev/projects/035872b5-dbf3-4695-bbb3-1c1388196e56) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Inspired by classic puzzle battlers like Pokémon Puzzle League.
+Thanks to the open-source community for the amazing tools.
